@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+    header {
+            background-color: #333;
+            color: #fff;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+    
+        .logo img {
+            height: 60px;
+            border-radius: 50%;
+        }
+    
+        .logo-and-name {
+            display: flex;
+            align-items: center;
+        }
+    
+        .company-name h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-left: 15px;
+    
+        }
+    
+        .right {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .right li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    
+        .right li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+    
+        .right li a:hover {
+            background-color: #555;
+            border-radius : 15px;
+        }
+
+
+.container {
+    display : grid;
+    grid-template-columns: repeat(auto-fit,3,1fr);
+    justify-content : center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform : uppercase;
+    animation-name : text;
+    color : black;
+    animation-duration : 5s;
+    text-shadow : 0 0 10px white,
+        0 0 20px pink,
+        0 0 30px pink,
+        0 0 40px pink,
+        0 0 50px pink,
+        0 0 60px pink,
+        0 0 70px pink,
+        0 0 80px white;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes text {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.course {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.course img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.course h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.course p {
+    color: #666;
+}
+.button a
+{
+   padding : 10px 20px;
+   text-decoration : none;
+   font-size : 16px;
+   font-weight : bold;
+   color : #fff;
+   background-color : #007bff;
+   border : none;
+   border-radius : 6px;
+   cursor : pointer;
+    transition : background-color 0.3s ease;
+}
+.button a:hover
+{
+    background-color: #0056b3;
+}
+.button a:focus
+{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+.button a:active {
+    transform: translateY(1px);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li .current-link
+{
+    color: #ffcc00;
+    /* Adjust other styles as needed */
+}
